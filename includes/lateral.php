@@ -9,8 +9,9 @@
             
             <!-- Botones -->
             <a href="logout.php" class="boton boton-verde"> Crear entradas </a>
+            <a href="logout.php" class="boton"> Crear categoria </a>
             <a href="logout.php" class="boton boton-naranja"> Mis datos </a>
-            <a href="logout.php" class="boton"> Cerrar Sesión </a>
+            <a href="logout.php" class="boton boton-rojo"> Cerrar Sesión </a>
         </div>
 
     <?php endif ?>
