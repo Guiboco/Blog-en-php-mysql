@@ -1,4 +1,3 @@
-<?php require_once 'includes/helpers.php' ?>
 
 <!-- SIDEBAR -->
 
@@ -9,14 +8,14 @@
             
             <!-- Botones -->
             <a href="logout.php" class="boton boton-verde"> Crear entradas </a>
-            <a href="logout.php" class="boton"> Crear categoria </a>
+            <a href="crear-categoria.php" class="boton"> Crear categoria </a>
             <a href="logout.php" class="boton boton-naranja"> Mis datos </a>
             <a href="logout.php" class="boton boton-rojo"> Cerrar Sesión </a>
         </div>
 
     <?php endif ?>
 
-
+    <?php if (!isset($_SESSION['usuario'])) : ?>
     <div id="login" class="bloque">
         <h3>Identificate</h3>
 
@@ -74,4 +73,6 @@
         </form>
         <?php borrarErrores(); ?>
     </div>
+
+    <?php endif ?>
 </aside>
