@@ -8,7 +8,7 @@
     <h1> Ultimas entradas</h1>
 
     <?php
-    $entradas = conseguirEntradas($db);
+    $entradas = conseguirEntradas($db, true);
     if (!empty($entradas)) :
         while($entrada = mysqli_fetch_assoc($entradas)): ?>
             <article class="entradas">
@@ -25,7 +25,7 @@
     ?>
 
 <div id="ver-todas">
-    <a href=""> Ver todas las entradas</a>
+    <a href="entradas.php"> Ver todas las entradas</a>
 </div>
 
 </div>
