@@ -23,10 +23,16 @@ function borrarErrores()
         $borrado = true;
 
     }
+    
+    if (isset($_SESSION['actualizado'])) {
+        $_SESSION['actualizado'] = null;
+        $borrado = true;
+
+    }
 
     if (isset($_SESSION['errores_entrada'])) {
         $_SESSION['errores_entrada'] = null;
-        
+        $borrado = true;
     }
 
 
